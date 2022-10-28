@@ -7,7 +7,7 @@ local Notify = function(Message)
         Title = "Comp Notifier";
         Text = Message;
         Icon = "rbxassetid://866746510";
-        Duration = 5;
+        Duration = 10;
     })
 end
 
