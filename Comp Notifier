@@ -1,5 +1,5 @@
 local Player = game:GetService("Players").LocalPlayer;
-local ScreenGui = Player.PlayerGui.ScreenGui
+local ScreenGui = Player.PlayerGui.ScreenGui;
 local Grid = ScreenGui.UI.NormalSeason.Arena.PlayerHold.GlobalGrid;
 
 local Notify = function(Message)
@@ -27,8 +27,8 @@ task.spawn(function()
     local Your_Lead = Current_Points.Text - Eleventh_Points.Text;
     
     if Your_Lead > 0 then
-        Notify("Your Lead On 11th Is: " .. Your_Lead .. ".")
+        Notify("Your Lead On 11th Is: " .. Your_Lead .. ".");
     else
-        Notify("You Have No Lead On 11th.")
+        Notify("You Have No Lead On 11th.");
     end
 end)
