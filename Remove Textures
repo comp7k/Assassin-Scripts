@@ -1,13 +1,13 @@
 task.spawn(function()
     local hasProperty = function(a, b)
-        local c = a[b]
+        local c = a[b];
     end
 
     for i, v in next, workspace:GetDescendants() do
         local Check = pcall(function()hasProperty(v, "Material")end)
         
         if Check then
-            v.Material = "Plastic"
+            v.Material = "Plastic";
         end
     end
     
@@ -15,7 +15,7 @@ task.spawn(function()
         local Check = pcall(function()hasProperty(v, "Material")end)
         
         if Check then
-            v.Material = "Plastic"
+            v.Material = "Plastic";
         end
     end)
 end)
