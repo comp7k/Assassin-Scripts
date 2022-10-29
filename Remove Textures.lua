@@ -1,8 +1,8 @@
+local hasProperty = function(a, b)
+    local c = a[b];
+end
+    
 task.spawn(function()
-    local hasProperty = function(a, b)
-        local c = a[b];
-    end
-
     for i, v in next, workspace:GetDescendants() do
         local Check = pcall(function()hasProperty(v, "Material")end)
         
